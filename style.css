@@ -15,7 +15,7 @@ html {
 #calculator {
    width: 325px;
    height: auto;
-   margin: 25rem auto;
+   margin: 25rem auto 25rem;
    padding: 20px 20px 9px;
    background: mediumaquamarine;
    background: linear-gradient(mediumaquamarine, rgb(93, 185, 154));
