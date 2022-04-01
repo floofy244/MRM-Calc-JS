@@ -1,6 +1,7 @@
 var keys = document.querySelectorAll("#calculator span");
 var operators = ["+", "-", "x", "÷"];
 var decimalAdded = false;
+console.log(keys);
 
 for (var i = 0; i < keys.length; i++) {
    keys[i].onclick = function (e) {
@@ -10,6 +11,9 @@ for (var i = 0; i < keys.length; i++) {
       if (btnVal == "C") {
          input.innerHTML = "";
          decimalAdded = false;
+      }
+      if (btnVal == "D") {
+         input.innerHTML = inputVal.substring(0, inputVal.length - 1);
       }
       else if (btnVal == "=") {
          var equation = inputVal;
